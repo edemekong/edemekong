@@ -1,0 +1,22 @@
+name: Deploy to Production
+"on":
+  push:
+    branches:
+      - master
+jobs:
+  deploy_live_website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.7.5"
+          channel: "stable"
+      - run: flutter pub get
+      - run: flutter build web --release
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_VJRCODES }}"
+          channelId: live
+          projectId: vjrcodes
