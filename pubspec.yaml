@@ -1,8 +1,8 @@
 name: edemekong
-description: A portfolio app
+description: My portfolio app
 publish_to: "none"
 
-version: 1.0.0+1
+version: 0.1.0+1
 
 environment:
   sdk: ">=2.19.2 <3.0.0"

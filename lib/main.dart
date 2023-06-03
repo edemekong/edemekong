@@ -1,3 +1,4 @@
+import 'package:edemekong/ui/screens/screens.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,6 +12,7 @@ class RootApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "Paul Jeremiah",
+      home: HomeViewWidget(),
     );
   }
 }
