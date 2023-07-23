@@ -10,6 +10,6 @@ SOCIAL MEDIA HANDLES [Twitter](https://twitter.com/edeme_kong) | [Linkedin](http
 <br />
 <br />
 
-> ### Check out my YT channel![visit here](https://www.youtube.com/channel/UC1fuQBjVLSqwk-PgdeeMAyQ)!
+> ### Check out my YT channel [visit here](https://www.youtube.com/channel/UC1fuQBjVLSqwk-PgdeeMAyQ)!
 
 </div>
