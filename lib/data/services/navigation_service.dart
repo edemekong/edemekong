@@ -4,16 +4,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../ui/screens/screens.dart';
 
-final navigationProvider = Provider(
-  (ref) => NavigationService(ref),
-);
+final navigationProvider = Provider((ref) => NavigationService(ref));
 
 class NavigationService {
   final Ref ref;
   late GlobalObjectKey<NavigatorState> mainNavigatorKey;
 
   NavigationService(this.ref) {
-    mainNavigatorKey = const GlobalObjectKey<NavigatorState>(ValueKey("main-navigator"));
+    mainNavigatorKey = const GlobalObjectKey<NavigatorState>(
+      ValueKey("main-navigator"),
+    );
   }
 
   GoRouter get router => GoRouter(
@@ -28,6 +28,20 @@ class NavigationService {
             },
             branches: [
               StatefulShellBranch(
+                initialLocation: AppRoutes.hire.path,
+                routes: [
+                  GoRoute(
+                    name: AppRoutes.hire.name,
+                    path: AppRoutes.hire.path,
+                    pageBuilder: (context, state) {
+                      return const NoTransitionPage(
+                        child: HireView(),
+                      );
+                    },
+                  ),
+                ],
+              ),
+              StatefulShellBranch(
                 initialLocation: AppRoutes.projects.path,
                 routes: [
                   GoRoute(
@@ -36,20 +50,6 @@ class NavigationService {
                     pageBuilder: (context, state) {
                       return const NoTransitionPage(
                         child: ProjectsView(),
-                      );
-                    },
-                  ),
-                ],
-              ),
-              StatefulShellBranch(
-                initialLocation: AppRoutes.contents.path,
-                routes: [
-                  GoRoute(
-                    name: AppRoutes.contents.name,
-                    path: AppRoutes.contents.path,
-                    pageBuilder: (context, state) {
-                      return const NoTransitionPage(
-                        child: ContentsView(),
                       );
                     },
                   ),
