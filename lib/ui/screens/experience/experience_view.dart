@@ -8,11 +8,14 @@ class ExperienceView extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       body: Center(
-        child: Text(
-          "Experience",
-          style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.w600,
-              ),
+        child: InkWell(
+          onTap: () {},
+          child: Text(
+            "Experience",
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.w600,
+                ),
+          ),
         ),
       ),
     );

@@ -75,7 +75,7 @@ class EdAppBar extends ConsumerWidget {
 
   String getTitle(String? path) {
     return switch (AppRoutes.values.firstWhere((element) => path == element.path)) {
-      AppRoutes.home => 'PAUL.flutterfairy',
+      AppRoutes.home => "PAUL",
       AppRoutes.hire => 'Hire me',
       AppRoutes.experience => 'Experience',
       AppRoutes.story => 'Story',

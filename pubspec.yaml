@@ -2,7 +2,7 @@ name: edemekong
 description: My portfolio app
 publish_to: "none"
 
-version: 0.1.0+1
+version: 1.0.0+1
 
 environment:
   sdk: ">=3.0.5 <4.0.0"
@@ -23,8 +23,10 @@ dependencies:
   shared_preferences: ^2.2.0
 
   # utils
+  intl: ^0.17.0
   url_launcher: ^6.1.11
   responsive_builder: ^0.7.0
+  extended_image: ^8.1.0
 
 dev_dependencies:
   flutter_test:
@@ -34,6 +36,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
 
   fonts:
     - family: SF-Pro

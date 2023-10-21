@@ -6,14 +6,9 @@ class HomeView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          "Home",
-          style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.w600,
-              ),
-        ),
+    return const Scaffold(
+      body: Column(
+        children: [],
       ),
     );
   }

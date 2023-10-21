@@ -8,7 +8,9 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 
 void main() {
   usePathUrlStrategy();
-  runApp(const ProviderScope(child: RootApp()));
+  runApp(
+    const ProviderScope(child: RootApp()),
+  );
 }
 
 class RootApp extends ConsumerWidget {
@@ -20,12 +22,14 @@ class RootApp extends ConsumerWidget {
     final navigationService = ref.read(navigationProvider);
 
     return ListenableBuilder(
-      listenable: Listenable.merge([appTheme.themeDataNotifier]),
+      listenable: Listenable.merge([
+        appTheme.themeDataNotifier,
+      ]),
       builder: (context, _) {
-        final themeData = appTheme.themeDataNotifier.value;
+        final ThemeData themeData = appTheme.themeDataNotifier.value;
 
         return MaterialApp.router(
-          title: "PAUL.flutterfariy",
+          title: "PAUL",
           theme: themeData,
           routerConfig: navigationService.router,
         );

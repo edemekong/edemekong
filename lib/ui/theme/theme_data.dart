@@ -130,7 +130,7 @@ class AppThemeData {
       onSecondary: AppColors.lightGrey,
     ),
     cardColor: AppColors.cardDark,
-    scaffoldBackgroundColor: AppColors.black,
+    scaffoldBackgroundColor: AppColors.darkBackground,
     primaryColor: AppColors.primaryColor,
     buttonTheme: const ButtonThemeData(
       height: 47,
