@@ -1,2 +1,2 @@
-## <img src="https://raw.githubusercontent.com/Eunit99/eunit99/master/img/wave.gif" width="30px"> I'm Paul
-I'm a mobile developer passionate about Flutter&Dart, and also solving industrial level mobile engineering problems in the most open sourced way possible.
+## <img src="https://raw.githubusercontent.com/Eunit99/eunit99/master/img/wave.gif" width="30px"> Hi, I'm Paul
+I build software systems from ground-up, [see](https://docmadeeasy.com/v/658739674).
